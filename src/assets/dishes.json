@@ -1,0 +1,25 @@
+{
+  "dishes": [
+    {
+      "imgSrc": "dish01",
+      "name": "Tainha",
+      "description": "Peixa da época, com vinho cai muito bem. Acompanha salada.",
+      "price": "32.90",
+      "prepTime": "30"
+    },
+    {
+      "imgSrc": "dish02",
+      "name": "Prato 2",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "50",
+      "prepTime": "20"
+    },
+    {
+      "imgSrc": "dish03",
+      "name": "50",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    }
+  ]
+}

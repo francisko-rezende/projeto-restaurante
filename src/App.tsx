@@ -1,16 +1,18 @@
-import { useState } from 'react'
-import './App.css'
-import { Footer } from './Components/Footer'
-import { Navbar } from './Components/Navbar'
+import { Footer } from "./Components/Footer";
+import { Navbar } from "./Components/Navbar";
+import { ProductSection } from "./Components/ProductSection";
+import { dishes } from "./assets/dishes.json";
 
 function App() {
-
   return (
     <div className="App">
       <Navbar />
+      <main>
+        <ProductSection title="Pratos principais" products={dishes} />
+      </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
