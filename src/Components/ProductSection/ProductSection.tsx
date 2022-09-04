@@ -11,15 +11,36 @@ export interface Product {
   price: string;
   prepTime: string;
   dishType: DishTypes;
+  subSection?: string;
 }
 
 interface ProductionSectionProps {
   title: string;
   products: Product[];
+  subSections?: string[];
 }
 
-export const ProductSection = ({ title, products }: ProductionSectionProps) => {
-  return (
+export const ProductSection = ({
+  title,
+  products,
+  subSections,
+}: ProductionSectionProps) => {
+  const hasSubSections = subSections && subSections.length >= 2;
+
+  return hasSubSections ? (
+    <section>
+      {subSections.map((subSection) => (
+        <>
+          <h3>{subSection}</h3>
+          {products
+            .filter((product) => product.subSection === subSection)
+            .map((product) => (
+              <Card key={product.name} {...product} />
+            ))}
+        </>
+      ))}
+    </section>
+  ) : (
     <section>
       <h2>{title}</h2>
       {products.map((product: Product) => (
@@ -40,4 +61,5 @@ ProductSection.propType = {
       prepTime: PropTypes.string.isRequired,
     })
   ),
+  subSections: PropTypes.arrayOf(PropTypes.string),
 };

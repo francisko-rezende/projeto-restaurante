@@ -19,11 +19,15 @@ function App() {
     <div className="App">
       <Navbar />
       <main>
-        <ProductSection title="Entradas" products={entrees} />
-        <ProductSection title="Salads" products={salads} />
-        <ProductSection title="Pratos principais" products={mainDishes} />
-        <ProductSection title="Sobremesas" products={desserts} />
-        <ProductSection title="Vinhos" products={wines} />
+        {/* <ProductSection title="Entradas" products={entrees} />
+        <ProductSection title="Salads" products={salads} /> */}
+        <ProductSection
+          title="Pratos principais"
+          products={mainDishes}
+          subSections={["Peixes", "Saladas"]}
+        />
+        {/* <ProductSection title="Sobremesas" products={desserts} />
+        <ProductSection title="Vinhos" products={wines} /> */}
       </main>
       <Footer />
     </div>

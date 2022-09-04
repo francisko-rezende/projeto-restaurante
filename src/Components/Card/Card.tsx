@@ -18,7 +18,7 @@ export const Card = ({
 }: CardProps) => {
   return (
     <div>
-      <h3>{name}</h3>
+      <h4>{name}</h4>
       <img src={`/${imgSrc}.jpg`} alt={`Foto do prato: ${name}`} />
       <p>{description}</p>
       <p>Tempo de preparo{prepTime}</p>
