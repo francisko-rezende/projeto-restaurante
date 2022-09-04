@@ -100,25 +100,82 @@
       "prepTime": "25"
     },
     {
-      "imgSrc": "wine01",
-      "dishType": "wine",
+      "imgSrc": "drink01",
+      "dishType": "drink",
+      "subSection": "Vinhos",
       "name": "Vinho 1",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
       "price": "40",
       "prepTime": "25"
     },
     {
-      "imgSrc": "wine02",
-      "dishType": "wine",
+      "imgSrc": "drink02",
+      "dishType": "drink",
+      "subSection": "Vinhos",
       "name": "Vinho 2",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
       "price": "40",
       "prepTime": "25"
     },
     {
-      "imgSrc": "wine03",
-      "dishType": "wine",
+      "imgSrc": "drink03",
+      "dishType": "drink",
+      "subSection": "Vinhos",
       "name": "Vinho 3",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "drink04",
+      "dishType": "drink",
+      "subSection": "Drinks",
+      "name": "Drink 1",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "drink05",
+      "dishType": "drink",
+      "subSection": "Drinks",
+      "name": "Drink 2",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "drink06",
+      "dishType": "drink",
+      "subSection": "Drinks",
+      "name": "Drink 3",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "drink07",
+      "dishType": "drink",
+      "subSection": "Cervejas",
+      "name": "Cerveja 1",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "drink08",
+      "dishType": "drink",
+      "subSection": "Cervejas",
+      "name": "Cerveja 2",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "drink09",
+      "dishType": "drink",
+      "subSection": "Cervejas",
+      "name": "Cerveja 3",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
       "price": "40",
       "prepTime": "25"

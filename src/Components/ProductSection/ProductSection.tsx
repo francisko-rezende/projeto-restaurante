@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "../Card";
 import PropTypes from "prop-types";
 
-export type DishTypes = "main" | "dessert" | "salad" | "wine" | "entree";
+export type DishTypes = "main" | "dessert" | "salad" | "drink" | "entree";
 
 export interface Product {
   imgSrc: string;

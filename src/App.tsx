@@ -11,7 +11,7 @@ const entrees = getFilteredProducts(dishes as Product[], "entree");
 const salads = getFilteredProducts(dishes as Product[], "salad");
 const mainDishes = getFilteredProducts(dishes as Product[], "main");
 const desserts = getFilteredProducts(dishes as Product[], "dessert");
-const wines = getFilteredProducts(dishes as Product[], "wine");
+const wines = getFilteredProducts(dishes as Product[], "drink");
 
 function App() {
   console.log(wines);
@@ -19,15 +19,19 @@ function App() {
     <div className="App">
       <Navbar />
       <main>
-        {/* <ProductSection title="Entradas" products={entrees} />
-        <ProductSection title="Salads" products={salads} /> */}
+        <ProductSection title="Entradas" products={entrees} />
+        <ProductSection title="Salads" products={salads} />
         <ProductSection
           title="Pratos principais"
           products={mainDishes}
           subSections={["Peixes", "Saladas"]}
         />
-        {/* <ProductSection title="Sobremesas" products={desserts} />
-        <ProductSection title="Vinhos" products={wines} /> */}
+        <ProductSection title="Sobremesas" products={desserts} />
+        <ProductSection
+          title="Vinhos"
+          products={wines}
+          subSections={["Cervejas", "Vinhos", "Drinks"]}
+        />
       </main>
       <Footer />
     </div>
