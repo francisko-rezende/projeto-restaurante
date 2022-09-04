@@ -2,12 +2,15 @@ import React from "react";
 import { Card } from "../Card";
 import PropTypes from "prop-types";
 
-interface Product {
+export type DishTypes = "main" | "dessert" | "salad" | "wine" | "entree";
+
+export interface Product {
   imgSrc: string;
   name: string;
   description: string;
   price: string;
   prepTime: string;
+  dishType: DishTypes;
 }
 
 interface ProductionSectionProps {

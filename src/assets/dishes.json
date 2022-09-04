@@ -2,6 +2,7 @@
   "dishes": [
     {
       "imgSrc": "dish01",
+      "dishType": "main",
       "name": "Tainha",
       "description": "Peixa da época, com vinho cai muito bem. Acompanha salada.",
       "price": "32.90",
@@ -9,6 +10,7 @@
     },
     {
       "imgSrc": "dish02",
+      "dishType": "main",
       "name": "Prato 2",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
       "price": "50",
@@ -16,7 +18,104 @@
     },
     {
       "imgSrc": "dish03",
-      "name": "50",
+      "dishType": "main",
+      "name": "Peixola",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "dish04",
+      "dishType": "entree",
+      "name": "Saladinha 1",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "dish05",
+      "dishType": "entree",
+      "name": "Saladinha 2",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "dish06",
+      "dishType": "entree",
+      "name": "Saladinha 3",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "dish07",
+      "dishType": "salad",
+      "name": "Saladona 1",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "dish08",
+      "dishType": "salad",
+      "name": "Saladona 2",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "dish09",
+      "dishType": "salad",
+      "name": "Saladona 3",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "dish10",
+      "dishType": "dessert",
+      "name": "Docinho 1",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "dish11",
+      "dishType": "dessert",
+      "name": "Docinho 2",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "dish12",
+      "dishType": "dessert",
+      "name": "Docinho 3",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "wine01",
+      "dishType": "wine",
+      "name": "Vinho 1",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "wine02",
+      "dishType": "wine",
+      "name": "Vinho 2",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+      "price": "40",
+      "prepTime": "25"
+    },
+    {
+      "imgSrc": "wine03",
+      "dishType": "wine",
+      "name": "Vinho 3",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
       "price": "40",
       "prepTime": "25"
