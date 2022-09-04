@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "../Card";
 import PropTypes from "prop-types";
+import styles from "./ProductSection.module.css";
 
 export type DishTypes = "main" | "dessert" | "salad" | "drink" | "entree";
 
@@ -28,24 +29,30 @@ export const ProductSection = ({
   const hasSubSections = subSections && subSections.length >= 2;
 
   return hasSubSections ? (
-    <section>
+    <section className={styles.section}>
       {subSections.map((subSection) => (
-        <>
+        <div style={{ display: "grid", gap: "1rem" }}>
           <h3>{subSection}</h3>
-          {products
-            .filter((product) => product.subSection === subSection)
-            .map((product) => (
-              <Card key={product.name} {...product} />
-            ))}
-        </>
+          <div className={styles.cardsWrapper}>
+            {products
+              .filter((product) => product.subSection === subSection)
+              .map((product) => (
+                <Card key={product.name} {...product} />
+              ))}
+          </div>
+        </div>
       ))}
     </section>
   ) : (
-    <section>
-      <h2>{title}</h2>
-      {products.map((product: Product) => (
-        <Card key={product.name} {...product} />
-      ))}
+    <section className={styles.section}>
+      <div style={{ display: "grid" }}>
+        <h2>{title}</h2>
+        <div className={styles.cardsWrapper}>
+          {products.map((product: Product) => (
+            <Card key={product.name} {...product} />
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

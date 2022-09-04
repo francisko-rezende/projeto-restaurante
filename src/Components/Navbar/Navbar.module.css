@@ -1,0 +1,11 @@
+.title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}

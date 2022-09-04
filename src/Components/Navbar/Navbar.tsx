@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
+import { Logo } from "../Logo/Logo";
+import styles from "./Navbar.module.css";
 
 export const Navbar = () => {
-  return <header>
-    <h1>
-      <img src="/fish.svg" alt="Restaurante da Marilene" />
-    </h1>
-    <h2>Menu</h2>
-  </header>;
+  return (
+    <header className={styles.header}>
+      <h1 className={styles.title}>
+        <Logo />
+        Restaurante da Marilene
+      </h1>
+    </header>
+  );
 };

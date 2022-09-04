@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styles from "./Card.module.css";
+import { formatPrice } from "../../utils";
 
 interface CardProps {
   imgSrc: string;
@@ -17,12 +19,16 @@ export const Card = ({
   prepTime,
 }: CardProps) => {
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
       <h4>{name}</h4>
-      <img src={`/${imgSrc}.jpg`} alt={`Foto do prato: ${name}`} />
+      <img
+        className={styles.cardImg}
+        src={`/${imgSrc}.jpg`}
+        alt={`Foto do prato: ${name}`}
+      />
       <p>{description}</p>
-      <p>Tempo de preparo{prepTime}</p>
-      <p>{price}</p>
+      <p>Tempo de preparo: {prepTime} minutos</p>
+      <p>{formatPrice(price)}</p>
     </div>
   );
 };

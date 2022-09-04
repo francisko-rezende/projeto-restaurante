@@ -3,6 +3,7 @@ import { Navbar } from "./Components/Navbar";
 import { ProductSection } from "./Components/ProductSection";
 import { dishes } from "./assets/dishes.json";
 import { DishTypes, Product } from "./Components/ProductSection/ProductSection";
+import { Container } from "./Components/Container";
 
 const getFilteredProducts = (products: Product[], dishType: DishTypes) =>
   products.filter((product) => product.dishType === dishType);
@@ -14,11 +15,10 @@ const desserts = getFilteredProducts(dishes as Product[], "dessert");
 const wines = getFilteredProducts(dishes as Product[], "drink");
 
 function App() {
-  console.log(wines);
   return (
-    <div className="App">
+    <Container>
       <Navbar />
-      <main>
+      <main style={{ display: "grid" }}>
         <ProductSection title="Entradas" products={entrees} />
         <ProductSection title="Salads" products={salads} />
         <ProductSection
@@ -34,7 +34,7 @@ function App() {
         />
       </main>
       <Footer />
-    </div>
+    </Container>
   );
 }
 
