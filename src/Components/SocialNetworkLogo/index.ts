@@ -1,0 +1,1 @@
+export { SocialNetworkLogo } from "./SocialNetworkLogo";

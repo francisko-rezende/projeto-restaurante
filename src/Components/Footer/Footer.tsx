@@ -1,17 +1,32 @@
 import React from "react";
+import { Instagram } from "../Instagram";
+import { SocialNetworkLogo } from "../SocialNetworkLogo";
+import { WhatsApp } from "../WhatsApp";
 
 export const Footer = () => {
   return (
     <footer>
       <address>
-        <ul>
-          <li>Praia de Jurere - Canasvieiras, Florianópolis - SC</li>
+        <ul style={{ display: "grid", justifyContent: "center" }}>
           <li>
-            <ul>
-              <li><a href="#"><img src="/whatsapp.svg" alt="Entre em contato por ZapZoperson"/></a></li>
-              <li><a href="#"><img src="/instagram.svg" alt="Visite nosso Insta"/></a></li>
+            <ul style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+              <li>
+                <a href="#">
+                  <SocialNetworkLogo>
+                    <WhatsApp />
+                  </SocialNetworkLogo>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <SocialNetworkLogo>
+                    <Instagram />
+                  </SocialNetworkLogo>
+                </a>
+              </li>
             </ul>
           </li>
+          <li>Praia de Jurere - Canasvieiras, Florianópolis - SC</li>
         </ul>
       </address>
       <small>© Marilene—Alguns direitos reservados</small>
